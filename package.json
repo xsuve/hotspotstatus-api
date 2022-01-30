@@ -1,0 +1,23 @@
+{
+  "name": "hotspotstatus-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsuve/hotspotstatus-api.git"
+  },
+  "author": "xsuve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xsuve/hotspotstatus-api/issues"
+  },
+  "homepage": "https://github.com/xsuve/hotspotstatus-api#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
