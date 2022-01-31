@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 8000;
+const port = process.env.PORT;
 const net = require('net');
 
 app.use(cors({ credentials: true, origin: true }));
@@ -27,6 +27,6 @@ app.get('/ping', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}.`);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}.`);
 })
