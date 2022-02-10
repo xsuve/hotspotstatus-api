@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 8000;
 const net = require('net');
 
 app.use(cors({ credentials: true, origin: true }));
@@ -23,7 +23,7 @@ app.get('/ping', (req, res) => {
       res.send({ status: false });
     }).connect(req.query.port, req.query.ip);
   } else {
-    es.send({ status: false });
+    res.send({ status: false });
   }
 });
 
